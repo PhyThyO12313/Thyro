@@ -1,0 +1,100 @@
+/* --- Basic Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', 'Segoe UI', sans-serif; /* For the bold text style */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    background-image: url(/img/background.jpg);
+    background-size: cover; 
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: transparent; /* Allows background to show through */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(102, 0, 255); /* Text color for ChT MiNi */
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- Hero Section Content --- */
+.hero-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Pushes content to the right */
+    align-items: center;
+    padding-right: 15%;
+}
+
+.hero-content {
+    text-align: center;
+    width: 450px;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #111;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.hero-content .highlight {
+    color: #ff9f0a; /* The orange/yellow text */
+}
+
+/* --- The CTA Button --- */
+.cta-button {
+    background-color: #ff9f0a;
+    color: #111;
+    border: none;
+    padding: 12px 35px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}

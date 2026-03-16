@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Hub - Haikyuu Style</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            /* This creates the orange tint on the left fading to white/transparent on the right */
+            background: 
+                linear-gradient(to right, rgba(255, 123, 0, 0.6) 0%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.8) 100%),
+                url(/img/background.jpg) no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- Header --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 20;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 22px;
+            line-height: 1;
+            text-transform: uppercase;
+            
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 100px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* --- Main Layout --- */
+        .container {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            align-items: flex-end; /* Align characters to bottom */
+        }
+
+        /* Left Side: The Boys */
+        .image-side {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+          
+            
+        }
+
+        .image-side img {
+            height: 100%;
+            width: 800px;
+            object-fit: contain;
+            filter: drop-shadow(5px 5px 15px rgba(0,0,0,0.2));
+            
+        }
+
+        /* Right Side: Text */
+        .text-side {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-right: 5%;
+            z-index: 15;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            color: #ffffff;
+            line-height: 1.1;
+            text-transform: uppercase;
+        }
+
+        .hero-text h1 span {
+            color: #ff9900;
+        }
+
+        .watch-btn {
+            margin-top: 20px;
+            background: #ff9900;
+            color: white;
+            border: none;
+            padding: 12px 50px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .watch-btn:hover {
+            background: #e68a00;
+            transform: scale(1.05);
+        }
+
+        /* The Orange Bottom Fade */
+        .bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to top, rgba(255, 123, 0, 0.8), transparent);
+            z-index: 5;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ChT<br>MiNi</div>
+        <nav>
+            <ul>
+                
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">GALLERY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="image-side">
+            <img src="/img/popup.png" alt="Characters">
+        </div>
+
+        <div class="text-side">
+            <div class="hero-text">
+                <h1>WELCOME TO OUR ANIME<br>BEST FOR <span>EVERYONE</span></h1>
+                <button class="watch-btn">Watch Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar"></div>
+
+</body>
+</html>
