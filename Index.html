@@ -15,7 +15,6 @@
         body {
             height: 100vh;
             overflow: hidden;
-            /* This creates the orange tint on the left fading to white/transparent on the right */
             background: 
                 linear-gradient(to right, rgba(255, 123, 0, 0.6) 0%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.8) 100%),
                 url(/img/background.jpg) no-repeat center center;
@@ -24,7 +23,6 @@
             flex-direction: column;
         }
 
-        /* --- Header --- */
         header {
             display: flex;
             justify-content: space-between;
@@ -57,15 +55,15 @@
             font-weight: bold;
         }
 
-        /* --- Main Layout --- */
+      
         .container {
             display: flex;
             height: 100vh;
             width: 100%;
-            align-items: flex-end; /* Align characters to bottom */
+            align-items: flex-end;
         }
 
-        /* Left Side: The Boys */
+       
         .image-side {
             flex: 1;
             height: 100%;
@@ -83,7 +81,6 @@
             
         }
 
-        /* Right Side: Text */
         .text-side {
             flex: 1;
             height: 100%;
@@ -126,7 +123,6 @@
             transform: scale(1.05);
         }
 
-        /* The Orange Bottom Fade */
         .bottom-bar {
             position: absolute;
             bottom: 0;
